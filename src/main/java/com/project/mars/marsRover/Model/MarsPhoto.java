@@ -1,11 +1,19 @@
 package com.project.mars.marsRover.Model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class MarsPhoto {
    
 	private Long id;
 	private Integer sol;
 	private MarsCamera camera;
+	
+	@JsonProperty("img_src")
 	private String imgSrc;
+	
+	@JsonProperty("earth_date")
+	private String earth_date;
+	
 	public Long getId() {
 		return id;
 	}
@@ -31,10 +39,15 @@ public class MarsPhoto {
 		this.imgSrc = imgSrc;
 	}
 	
+	public String getEarth_date() {
+		return earth_date;
+	}
+	public void setEarth_date(String earth_date) {
+		this.earth_date = earth_date;
+	}
+	
 	@Override
 	public String toString() {
 		return "MarsPhoto [id=" + id + ", sol=" + sol + ", camera=" + camera + ", imgSrc=" + imgSrc + "]";
 	}
-	
-	
 }
