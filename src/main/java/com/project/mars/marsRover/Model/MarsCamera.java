@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class MarsCamera {
    
 	private Long id;
+	
+	@JsonProperty("nome")
 	private String nome;
 	
 	@JsonProperty("rover_id")
@@ -36,6 +38,10 @@ public class MarsCamera {
 	}
 	public void setFullName(String fullName) {
 		this.fullName = fullName;
+	}
+	@Override
+	public String toString() {
+		return "MarsCamera [id=" + id + ", nome=" + nome + ", roverId=" + roverId + ", fullName=" + fullName + "]";
 	}
 	
 	
