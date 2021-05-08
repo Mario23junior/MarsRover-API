@@ -14,6 +14,8 @@ public class MarsPhoto {
 	@JsonProperty("earth_date")
 	private String earth_date;
 	
+	private MarsRover rover;
+	
 	public Long getId() {
 		return id;
 	}
@@ -46,6 +48,12 @@ public class MarsPhoto {
 		this.earth_date = earth_date;
 	}
 	
+	public MarsRover getRover() {
+		return rover;
+	}
+	public void setRover(MarsRover rover) {
+		this.rover = rover;
+	}
 	@Override
 	public String toString() {
 		return "MarsPhoto [id=" + id + ", sol=" + sol + ", camera=" + camera + ", imgSrc=" + imgSrc + "]";
