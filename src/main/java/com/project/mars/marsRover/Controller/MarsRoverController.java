@@ -22,10 +22,11 @@ public class MarsRoverController {
 	public MarsRoverApiResponse listData(@RequestParam(required=false) String marsRoverData,
 			@RequestParam(required = false) Integer marsSol,
 	        @RequestParam(required = false) String robomars,
-	        @RequestParam(required = false) String camera)
+	        @RequestParam(required = false) String camera,
+	        @RequestParam(required = false) Integer page)
 	      {
 		
-		MarsRoverApiResponse roverData = marsRover.Datalist(marsSol, robomars, camera);
+		MarsRoverApiResponse roverData = marsRover.Datalist(marsSol, robomars, camera, page);
 		return roverData;
 	}
 }
