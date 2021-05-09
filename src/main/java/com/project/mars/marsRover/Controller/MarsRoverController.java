@@ -21,10 +21,11 @@ public class MarsRoverController {
 	@GetMapping("/")
 	public MarsRoverApiResponse listData(@RequestParam(required=false) String marsRoverData,
 			@RequestParam(required = false) Integer marsSol,
-	        @RequestParam(required = false) String robomars)
+	        @RequestParam(required = false) String robomars,
+	        @RequestParam(required = false) String camera)
 	      {
 		
-		MarsRoverApiResponse roverData = marsRover.Datalist(marsSol, robomars);
+		MarsRoverApiResponse roverData = marsRover.Datalist(marsSol, robomars, camera);
 		return roverData;
 	}
 }
