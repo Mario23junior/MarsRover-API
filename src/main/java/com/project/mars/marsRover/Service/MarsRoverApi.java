@@ -8,13 +8,15 @@ import com.project.mars.marsRover.Model.MarsRoverApiResponse;
 
 @Service
 public class MarsRoverApi {
-   
-	private String urlKey = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY";
 	
- 	 public MarsRoverApiResponse Datalist() {
+	 private String keyApi = "O9GhnLpLgZPJ6ZvdMEaDtqXZUmnbdVC1tlf9SG55";
+ 	
+ 	 public MarsRoverApiResponse Datalist(Integer marsSol , String roverType) {
 		RestTemplate restTemplate = new RestTemplate();
 		
-		ResponseEntity<MarsRoverApiResponse> response = restTemplate.getForEntity(urlKey,MarsRoverApiResponse.class);
+		String urlApi = "https://api.nasa.gov/mars-photos/api/v1/rovers/"+roverType+"/photos?sol="+marsSol+"&api_key="+keyApi;
+		
+		ResponseEntity<MarsRoverApiResponse> response = restTemplate.getForEntity(urlApi,MarsRoverApiResponse.class);
 		return(response.getBody());		
 		
 	}
