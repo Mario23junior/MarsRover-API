@@ -7,6 +7,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class MarsRover {
    
 	private Long id;
+	
+	@JsonProperty("name")
 	private String nome;
 
 	@JsonProperty("landing_date")

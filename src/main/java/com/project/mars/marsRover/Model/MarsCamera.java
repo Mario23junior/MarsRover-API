@@ -6,6 +6,7 @@ public class MarsCamera {
    
 	private Long id;
 	
+	@JsonProperty("name")
  	private String nome;
 	
 	@JsonProperty("rover_id")
