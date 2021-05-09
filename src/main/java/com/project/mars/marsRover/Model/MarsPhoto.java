@@ -31,15 +31,11 @@ public class MarsPhoto {
 	public MarsCamera getCamera() {
 		return camera;
 	}
+	
 	public void setCamera(MarsCamera camera) {
 		this.camera = camera;
 	}
-	public String getImgSrc() {
-		return imgSrc;
-	}
-	public void setImgSrc(String imgSrc) {
-		this.imgSrc = imgSrc;
-	}
+ 
 	
 	public String getEarth_date() {
 		return earth_date;
