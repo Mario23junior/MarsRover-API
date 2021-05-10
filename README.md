@@ -1,12 +1,12 @@
-<p align="center"><img src="/doc/logo-api.png"></p>
+<p align="center"><img src="/doc/logo-marsrover.png" height="500" width="500"></p>
 
 <h1 align="center">MarsRoverAPI</h1>
 
 <h3 align="center">API REST de código aberto fornecido e mantido pela  National Aeronautics and Space Administration (NASA) com o objetivo de disseminar informações e distribuir conhecimento cientifico sobre o planeta marte </h3>
 
 <p align="center">
-<a href="https://www.travis-ci.com/github/Mario23junior/MarsRover-API"><img src="https://img.shields.io/github/workflow/status/r-spacex/SpaceX-API/Test?style=flat-square"></a>
-<a href="https://en.wikipedia.org/wiki/Representational_state_transfer"><img src="https://img.shields.io/badge/interface-REST-brightgreen.svg?longCache=true&style=flat-square"></a>
+<a href="https://www.travis-ci.com/github/Mario23junior/MarsRover-API"><img src="https://img.shields.io/badge/MarsRover%20-build-green.svg"></a>
+<a href="https://en.wikipedia.org/wiki/Representational_state_transfer"><img src="https://img.shields.io/badge/interface%20-build-green.svg"></a>
 </p>
 
 
