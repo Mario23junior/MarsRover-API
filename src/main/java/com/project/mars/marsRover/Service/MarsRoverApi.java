@@ -28,7 +28,7 @@ public class MarsRoverApi {
 	 		     .retrieve()
 	 		     .bodyToMono(MarsRoverApiResponse.class);
  
-            MarsRoverApiResponse  marsRoverInfo = bodyResponseDatas.block();
+            MarsRoverApiResponse marsRoverInfo = bodyResponseDatas.block();
  	      return marsRoverInfo; 
 	}
 }
