@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "59d84618-428d-4a88-8aca-1d6a98291c8f",
+		"name": "API_NASA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listando informações nasa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": " ",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/nasa/mars/?marsRoverData=&camera=rhaz&marsSol=1000&page=0&robomars=curiosity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"nasa",
+						"mars",
+						""
+					],
+					"query": [
+						{
+							"key": "marsRoverData",
+							"value": ""
+						},
+						{
+							"key": "camera",
+							"value": "rhaz"
+						},
+						{
+							"key": "marsSol",
+							"value": "1000"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "robomars",
+							"value": "curiosity"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
